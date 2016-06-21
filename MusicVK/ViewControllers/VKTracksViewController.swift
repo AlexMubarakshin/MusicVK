@@ -101,7 +101,7 @@ class VKTracksViewController: UIViewController {
         resultSearchController.hidesNavigationBarDuringPresentation = false
         resultSearchController.searchBar.placeholder = "Поиск по артисту"
         resultSearchController.searchBar.searchBarStyle = .Minimal
-        resultSearchController.searchBar.showsCancelButton = true
+        resultSearchController.searchBar.showsCancelButton = false
         dispatch_async(dispatch_get_main_queue(), {
             self.navigationItem.titleView = self.resultSearchController.searchBar
         })

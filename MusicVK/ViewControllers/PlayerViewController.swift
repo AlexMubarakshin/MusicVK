@@ -80,6 +80,7 @@ class PlayerViewController: UIViewController {
     func settupView() {
         self.navigationController?.navigationBar.barTintColor = Settings.navigationViewColor
         self.navigationController?.navigationBar.tintColor = Settings.textColor
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : Settings.textColor]
         self.view.backgroundColor = Settings.viewColor
         self.tableView.backgroundColor = Settings.viewColor
         self.progressTimerLabel.textColor = Settings.textColor
