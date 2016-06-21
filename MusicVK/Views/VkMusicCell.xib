@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VkMusicCell" rowHeight="80" id="93y-BF-KW6" customClass="VkMusicCell" customModule="MusicVK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="93y-BF-KW6" id="MFB-9j-nCp">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_timer" translatesAutoresizingMaskIntoConstraints="NO" id="JZS-mK-LD5">
+                        <rect key="frame" x="12" y="52" width="10" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="RDt-sU-hTq"/>
+                            <constraint firstAttribute="height" constant="11" id="wmk-TG-lid"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOv-J9-rm8">
+                        <rect key="frame" x="12" y="17" width="356" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct0-yU-NHf">
+                        <rect key="frame" x="12" y="32" width="356" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXw-pl-oK8">
+                        <rect key="frame" x="376" y="28" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="GeM-BF-gdX"/>
+                            <constraint firstAttribute="height" constant="24" id="x4O-iP-zvG"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="ic_file_download"/>
+                        <connections>
+                            <action selector="downloadTapped:" destination="93y-BF-KW6" eventType="touchUpInside" id="vYv-vc-uhx"/>
+                        </connections>
+                    </button>
+                    <progressView hidden="YES" opaque="NO" tag="40" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0su-uV-UNS">
+                        <rect key="frame" x="52" y="69" width="348" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yk8-tF-F58">
+                        <rect key="frame" x="23" y="52" width="21" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EXw-pl-oK8" firstAttribute="leading" secondItem="AOv-J9-rm8" secondAttribute="trailing" constant="8" id="878-aD-7OQ"/>
+                    <constraint firstItem="EXw-pl-oK8" firstAttribute="leading" secondItem="Ct0-yU-NHf" secondAttribute="trailing" constant="8" id="8e1-9a-ex1"/>
+                    <constraint firstItem="Ct0-yU-NHf" firstAttribute="top" secondItem="AOv-J9-rm8" secondAttribute="bottom" constant="-3" id="ICg-xS-wRn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="EXw-pl-oK8" secondAttribute="trailing" id="RT3-oK-G1o"/>
+                    <constraint firstItem="0su-uV-UNS" firstAttribute="trailing" secondItem="EXw-pl-oK8" secondAttribute="trailing" id="XYZ-GY-Rlu"/>
+                    <constraint firstItem="AOv-J9-rm8" firstAttribute="top" secondItem="MFB-9j-nCp" secondAttribute="topMargin" constant="9" id="bi3-Bd-dJa"/>
+                    <constraint firstItem="JZS-mK-LD5" firstAttribute="top" secondItem="Ct0-yU-NHf" secondAttribute="bottom" constant="5" id="end-qn-bwP"/>
+                    <constraint firstItem="EXw-pl-oK8" firstAttribute="top" secondItem="MFB-9j-nCp" secondAttribute="topMargin" constant="20" id="fi6-dl-t0V"/>
+                    <constraint firstItem="Ct0-yU-NHf" firstAttribute="leading" secondItem="MFB-9j-nCp" secondAttribute="leadingMargin" constant="4" id="jtP-rV-SjJ"/>
+                    <constraint firstItem="0su-uV-UNS" firstAttribute="leading" secondItem="MFB-9j-nCp" secondAttribute="leadingMargin" constant="44" id="ltt-cF-y3U"/>
+                    <constraint firstItem="AOv-J9-rm8" firstAttribute="leading" secondItem="MFB-9j-nCp" secondAttribute="leadingMargin" constant="4" id="or6-yp-7Ra"/>
+                    <constraint firstItem="JZS-mK-LD5" firstAttribute="leading" secondItem="MFB-9j-nCp" secondAttribute="leadingMargin" constant="4" id="pxy-ca-TZn"/>
+                    <constraint firstItem="Yk8-tF-F58" firstAttribute="top" secondItem="Ct0-yU-NHf" secondAttribute="bottom" constant="5" id="sGK-PA-njh"/>
+                    <constraint firstItem="Yk8-tF-F58" firstAttribute="leading" secondItem="JZS-mK-LD5" secondAttribute="trailing" constant="1" id="t5y-48-30p"/>
+                    <constraint firstItem="0su-uV-UNS" firstAttribute="bottom" secondItem="MFB-9j-nCp" secondAttribute="bottomMargin" id="top-vV-LM6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artistLabel" destination="Ct0-yU-NHf" id="JHZ-y2-EoU"/>
+                <outlet property="downloadBtnImage" destination="EXw-pl-oK8" id="2ue-SB-EpY"/>
+                <outlet property="durationLabel" destination="Yk8-tF-F58" id="SPV-dl-o33"/>
+                <outlet property="progressView" destination="0su-uV-UNS" id="6CR-yD-Fzk"/>
+                <outlet property="timerImage" destination="MFB-9j-nCp" id="tin-QX-61z"/>
+                <outlet property="titleLabel" destination="AOv-J9-rm8" id="Af5-Cx-Lvh"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="311"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_file_download" width="24" height="24"/>
+        <image name="ic_timer" width="24" height="24"/>
+    </resources>
+</document>

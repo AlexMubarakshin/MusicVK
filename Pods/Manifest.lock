@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (3.4.1)
+  - Jukebox (0.1.1)
+  - SwiftyVK (1.2.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - Jukebox (~> 0.1.0)
+  - SwiftyVK (from `https://github.com/WE-St0r/SwiftyVK.git`)
+
+EXTERNAL SOURCES:
+  SwiftyVK:
+    :git: https://github.com/WE-St0r/SwiftyVK.git
+
+CHECKOUT OPTIONS:
+  SwiftyVK:
+    :commit: e5073fa37ca186c4eb49c1769dae11fd37897275
+    :git: https://github.com/WE-St0r/SwiftyVK.git
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Jukebox: 8d26135016a69ca3f0581a6b42755f0fcb9202b0
+  SwiftyVK: ea30729504d37356ec118dd8a00fede2adf4a1f7
+
+COCOAPODS: 0.39.0
